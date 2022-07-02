@@ -33,3 +33,41 @@
 .logo{
     color:rgb(233, 77, 77);
 }
+.head_icon{
+    height:30px;
+    width:auto;
+}
+.any_section{
+    display: flex;
+   
+
+}
+.nav_last_button{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding:2px;
+    border:1px solid lightgray;
+    border-radius:30px;
+}
+.navbar1{
+    display:flex;
+    justify-content: space-around;
+}
+.host_section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+}
+.navbar2_img{
+    height:30px;
+    width:auto;
+}
+.navbar2{
+    display:flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap:50px;
+    padding-top: 20px;
+}
