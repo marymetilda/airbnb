@@ -28,10 +28,17 @@
     font-weight: 300;
     font-style: normal;
 }
+*{
+    margin:0;
+    padding:0;
+}
 
 
 .logo{
-    color:rgb(233, 77, 77);
+    color:#ff385c;
+}
+.logo_img:hover{
+    cursor:pointer;
 }
 .head_icon{
     height:30px;
@@ -39,35 +46,173 @@
 }
 .any_section{
     display: flex;
-   
-
+    padding:10px;
+    border:1px solid lightgrey;
+    border-radius: 35px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    height:25px;
+    cursor:pointer;
+}
+.any_section:hover{
+    box-shadow:0 5px 10px rgb(0 0 0 / 14%);
 }
 .nav_last_button{
     display: flex;
     align-items: center;
     gap:10px;
-    padding:2px;
     border:1px solid lightgray;
     border-radius:30px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor:pointer;
+}
+.nav_last_button:hover{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%) ;
 }
 .navbar1{
     display:flex;
     justify-content: space-around;
+    align-items:center;
+    padding:20px 10px;
 }
 .host_section{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    gap:10px;
+    gap:20px;
 }
 .navbar2_img{
-    height:30px;
-    width:auto;
+    height:26px;
+    width:26px;
 }
 .navbar2{
     display:flex;
     justify-content: space-between;
     overflow-x: scroll;
-    gap:50px;
     padding-top: 20px;
+    border-top: 1px solid #ebe8e8;
+    padding-left:50px;
 }
+
+.anywhere_button{
+    border:none;
+    background-color: white;
+}
+.anywhere{
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:500;
+    border-top: none;
+    border-left:none;
+    border-bottom:none;
+    border-right:1px solid #717171;
+    padding:0px 10px;
+}
+.any_week_button{
+    border:none;
+    background-color:white;
+}
+.any_week{
+    color:black;
+    text-decoration:none;
+    font-size: 16px;
+    font-weight:500;
+    border-top:none;
+    border-bottom:none;
+    border-left:none;
+    border-right:1px solid #717171;
+    padding:0px 10px;
+}
+.add_guests_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px;
+    gap:10px;
+    background-color:white;
+    border:none;
+    padding-right:0px;
+}
+.add_guests{
+    color:#717171;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+}
+.search_icon{
+    display: block; 
+    fill: none; 
+    height: 12px; 
+    width: 12px;
+    stroke: currentcolor; 
+    stroke-width: 5.33333;
+    overflow: visible;
+    padding:10px;
+    border-radius:50px;
+    background-color: #ff385c;
+    color:white;
+    cursor: pointer;
+}
+.become_host{
+    color:black;
+    font-size: 16px;
+    font-weight:500;
+    text-decoration:none;
+    padding:12px 16px;
+    border-radius: 25px;
+}
+.become_host:hover{
+    background-color: #f6f7f7;
+}
+.globe_icon{
+    cursor:pointer;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+}
+.globe_icon:hover{
+    background-color:#f6f7f7;
+}
+.navbar2_txt{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: Small;
+    letter-spacing: .3px;
+}
+.nav2_small_section{
+    min-width:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding:10px;
+    opacity: .5;
+    cursor:pointer;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.nav2_small_section:hover{
+    opacity:1;
+}
+.main{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    max-width:1100px;
+    display: grid;
+    grid-gap:40px;
+    grid-column-gap:24px;
+    grid-auto-rows: minmax(0,1fr);
+    --breakpoint-grid-columns:4;
+}
+.place_section{
+    background-color: lightskyblue;
+}
+
