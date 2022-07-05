@@ -202,17 +202,337 @@
     opacity:1;
 }
 .main{
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 30px;
-    max-width:1100px;
+    max-width: 1120px;
+    margin:auto;
+    margin-top: 40px;
+    /* background-color: lightskyblue; */
     display: grid;
-    grid-gap:40px;
+    grid-template-columns:repeat(4, 1fr);
+    grid-row-gap:40px;
     grid-column-gap:24px;
-    grid-auto-rows: minmax(0,1fr);
-    --breakpoint-grid-columns:4;
+
 }
-.place_section{
-    background-color: lightskyblue;
+.minhphu{
+    height:250px;
+    background-image: url(images/minhphu/minhphu-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.place_rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom:3px;
+}
+.place_headline{
+    color:#222222;
+    font-weight:600;
+    font-size:15px;
+    font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+.rating_value{
+    color:#222222;
+    font-size: 15px;
+    font-weight:500;
+    font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    line-height:19px;
+}
+.place_txt{
+    color:#717171;
+    font-size:15px;
+    padding-bottom: 3px;
+    font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    letter-spacing: .5px;
+}
+.place_charge{
+    padding-top: 5px;
+    font-size: 16px;
+    font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+
+}
+.heart_img{
+    display: block;
+    float:right;
+    padding:15px;
+    fill: rgba(0, 0, 0, 0.5);
+    height: 24px;
+    width: 24px;
+    stroke: white;
+    stroke-width: 2;
+    overflow: visible;
+}
+.arrow_left{
+    height:10px;
+    width:10px;
+}
+.arrow_left_button{
+    background-color: white;
+    padding-top: 5px;
+    border-radius: 52px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border:none;
+    position: absolute;
+    left:8%;
+    top:50%;
+    display: none;
+}
+.arrow_right{
+    height:10px;
+    width:10px;
+}
+.arrow_right_button{
+    background-color: white;
+    padding-top: 5px;
+    border-radius: 52px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border:none;
+    position:absolute;
+    right:8%;
+    top:50%;
+    display: none;
 }
 
+.minhphu:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.fagu{
+    height:250px;
+    background-image: url(images/fagu/fagu-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.fagu:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.munnar{
+    height:250px;
+    background-image: url(images/munnar/munnar-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.munnar:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.delhi{
+    height:250px;
+    background-image: url(images/delhi/delhi-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.delhi:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.shimla{
+    height:250px;
+    background-image: url(images/shimla/shimla-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.shimla:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.jibhi{
+    height:250px;
+    background-image: url(images/jibhi/jibhi-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.jibhi:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.tambon{
+    height:250px;
+    background-image: url(images/tambon/tambon-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.tambon:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.kozhi{
+    height:250px;
+    background-image: url(images/kozhi/kozhi-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.kozhi:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.sigiri{
+    height:250px;
+    background-image: url(images/kozhi/kozhi-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.sigiri:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.muppai{
+    height:250px;
+    background-image: url(images/muppai/muppai-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.muppai:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+} 
+.chiang{
+    height:250px;
+    background-image: url(images/chiang/chiang-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.chiang:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.kalpeta{
+    height:250px;
+    background-image: url(images/kalpeta/kalpeta-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.kalpeta:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.first_kerala{
+    height:250px;
+    background-image: url(images/first-kerala/first_kerala-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.first_kerala:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.second_kerala{
+    height:250px;
+    background-image: url(images/second_kerala/second_kerala-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.second_kerala:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.tissam{
+    height:250px;
+    background-image: url(images/tissam/tissam-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.tissam:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.second_jibhi{
+    height:250px;
+    background-image: url(images/second-jibhi/second_jibhi-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.second_jibhi:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
