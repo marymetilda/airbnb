@@ -32,14 +32,27 @@
     margin:0;
     padding:0;
 }
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+}
 
 
-.logo{
+.logo_1{
     color:#ff385c;
 }
-.logo_img:hover{
+.logo_1:hover{
     cursor:pointer;
 }
+.logo_2{
+    display: none;
+    color:#ff385c;
+}
+
 .head_icon{
     height:30px;
     width:auto;
@@ -71,11 +84,14 @@
 .nav_last_button:hover{
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%) ;
 }
-.navbar1{
+.navbar1_desktop{
     display:flex;
     justify-content: space-around;
     align-items:center;
     padding:20px 10px;
+}
+.navbar1_tab{
+    display:none;
 }
 .host_section{
     display:flex;
@@ -202,25 +218,19 @@
     opacity:1;
 }
 .main{
-    max-width: 1120px;
+   
     margin:auto;
-    margin-top: 40px;
-    /* background-color: lightskyblue; */
+    margin-top: 235px;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
     grid-row-gap:40px;
     grid-column-gap:24px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 70px;
 
 }
-.minhphu{
-    height:250px;
-    background-image: url(images/minhphu/minhphu-1.webp);
-    background-size: cover;
-    background-position: 50% 50%;
-    border-radius: 10px;
-    cursor:pointer;
-    position:relative;
-}
+
 .rating{
     display: flex;
     align-items: center;
@@ -304,6 +314,15 @@
     top:50%;
     display: none;
 }
+.minhphu{
+    height:19vw;
+    background-image: url(images/minhphu/minhphu-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
 
 .minhphu:hover .arrow_right_button{
     display: flex;
@@ -312,7 +331,7 @@
     cursor:pointer;
 } 
 .fagu{
-    height:250px;
+    height:19vw;
     background-image: url(images/fagu/fagu-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -327,7 +346,7 @@
     cursor:pointer;
 } 
 .munnar{
-    height:250px;
+    height:19vw;
     background-image: url(images/munnar/munnar-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -342,7 +361,7 @@
     cursor:pointer;
 } 
 .delhi{
-    height:250px;
+    height:19vw;
     background-image: url(images/delhi/delhi-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -357,7 +376,7 @@
     cursor:pointer;
 } 
 .shimla{
-    height:250px;
+    height:19vw;
     background-image: url(images/shimla/shimla-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -372,7 +391,7 @@
     cursor:pointer;
 } 
 .jibhi{
-    height:250px;
+    height:19vw;
     background-image: url(images/jibhi/jibhi-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -387,7 +406,7 @@
     cursor:pointer;
 } 
 .tambon{
-    height:250px;
+    height:19vw;
     background-image: url(images/tambon/tambon-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -402,7 +421,7 @@
     cursor:pointer;
 } 
 .kozhi{
-    height:250px;
+    height:19vw;
     background-image: url(images/kozhi/kozhi-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -417,7 +436,7 @@
     cursor:pointer;
 } 
 .sigiri{
-    height:250px;
+    height:19vw;
     background-image: url(images/kozhi/kozhi-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -432,7 +451,7 @@
     cursor:pointer;
 } 
 .muppai{
-    height:250px;
+    height:19vw;
     background-image: url(images/muppai/muppai-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -447,7 +466,7 @@
     cursor:pointer;
 } 
 .chiang{
-    height:250px;
+    height:19vw;
     background-image: url(images/chiang/chiang-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -462,7 +481,7 @@
     cursor:pointer;
 }
 .kalpeta{
-    height:250px;
+    height:19vw;
     background-image: url(images/kalpeta/kalpeta-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -477,7 +496,7 @@
     cursor:pointer;
 }
 .first_kerala{
-    height:250px;
+    height:19vw;
     background-image: url(images/first-kerala/first_kerala-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -492,7 +511,7 @@
     cursor:pointer;
 }
 .second_kerala{
-    height:250px;
+    height:19vw;
     background-image: url(images/second_kerala/second_kerala-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -507,7 +526,7 @@
     cursor:pointer;
 }
 .tissam{
-    height:250px;
+    height:19vw;
     background-image: url(images/tissam/tissam-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -522,7 +541,7 @@
     cursor:pointer;
 }
 .second_jibhi{
-    height:250px;
+    height:19vw;
     background-image: url(images/second-jibhi/second_jibhi-1.webp);
     background-size: cover;
     background-position: 50% 50%;
@@ -535,4 +554,445 @@
     padding-top:8px;
     padding-bottom: 8px;
     cursor:pointer;
+}
+.kopha{
+    height:19vw;
+    background-image: url(images/kopha/kopha-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.kopha:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.tandi{
+    height:19vw;
+    background-image: url(images/tandi/tandi-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.tandi:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.mueang{
+    height:19vw;
+    background-image: url(images/mueang/mueang-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.mueang:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.kotta{
+    height:19vw;
+    background-image: url(images/kotta/kotta-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.kotta:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.footer_button{
+    display: flex;
+    border:none;
+    gap:10px;
+    align-items: center;
+    padding:5px;
+    background-color: white;
+}
+.footer_desktop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+    width:98%;
+}
+.footer_mobile{
+    display: none;
+}
+.copy_right{
+    font-size:15px;
+    line-height:18px;
+    color:#222222;
+    min-width: 120px;
+    padding-right: 5px;
+}
+.footer_txt{
+    font-size: 15px;
+    line-height: 18px;
+    color:#222222;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+.footer_txt-2{
+    font-weight:600;
+    font-size:14px;
+    line-height:18px;
+    color:#222222;
+    padding-left:5px;
+    padding-right:5px;
+}
+.footer_section-2{
+    text-align: center;
+    min-width: 350px;
+}
+.english_globe{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.button_section{
+    display: inline-block;
+    padding-right:10px;
+}
+
+@media screen and (max-width:1100px){
+    .logo_1{
+        display: none;
+    }
+    .logo_2{
+        display: block;
+    }
+    .navbar1{
+        gap:9%;
+    }
+    .navbar2{
+        padding-left:14px;
+    }
+    .main{
+        grid-template-columns: repeat(3, 1fr);
+        margin-right: 3%;
+        margin-left:3%;
+        
+    }
+    .minhphu{
+        height:28vw;
+    }
+    .fagu{
+        height:28vw;
+    }
+
+    .munnar{
+        height:28vw;
+    }
+    .delhi{
+        height:28vw;
+    }
+    .shimla{
+        height: 28vw;
+    }
+    .jibhi{
+        height:28vw;
+    }
+    .tambon{
+        height:28vw;
+    }
+    .kozhi{
+        height:28vw;
+    }
+    .sigiri{
+        height:28vw;
+    }
+    .muppai{
+        height:28vw;
+    }
+    .chiang{
+        height:28vw;
+    }
+    .kalpeta{
+        height:28vw;
+    }
+    .first_kerala{
+        height:280px;
+    }
+    .second_kerala{
+        height:280px;
+    }
+    .tissam{
+        height:280px;
+    }
+    .second_jibhi{
+        height:280px;
+    }
+    .kopha{
+        height:280px;
+    }
+    .tandi{
+        height:280px;
+    }
+    .mueang{
+        height:280px;
+    }
+    .kotta{
+        height:280px;
+    }
+}
+@media  screen and (max-width:949px) {
+    .any_section{
+        margin-left:-3%;
+    }
+    .main{
+        margin-left: 4%;
+        margin-right: 4%;;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .minhphu{
+        height:40vw;
+    }
+    .fagu{
+        height:40vw;
+    }
+
+    .munnar{
+        height:40vw;
+    }
+    .delhi{
+        height:40vw;
+    }
+    .shimla{
+        height: 40vw;
+    }
+    .jibhi{
+        height:40vw;
+    }
+    .tambon{
+        height:40vw;
+    }
+    .kozhi{
+        height:40vw;
+    }
+    .sigiri{
+        height:40vw;
+    }
+    .muppai{
+        height:40vw;
+    }
+    .chiang{
+        height:40vw;
+    }
+    .kalpeta{
+        height:40vw;
+    }
+    .first_kerala{
+        height:40vw;
+    }
+    .second_kerala{
+        height:40vw;
+    }
+    .tissam{
+        height:40vw;
+    }
+    .second_jibhi{
+        height:40vw;
+    }
+    .kopha{
+        height:40vw;
+    }
+    .tandi{
+        height:40vw;
+    }
+    .mueang{
+        height:40vw;
+    }
+    .kotta{
+        height:40vw;
+    }
+}
+@media  screen and (max-width:745px){
+    .navbar1_desktop{
+        display: none;
+    }
+    .navbar1_tab{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height:50px;
+        margin:30px;
+        border:1px solid transparent;
+        box-shadow:0 2px 5px rgb(0 0 0 / 14%);
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 7px;
+        margin-bottom: 0px;
+    }
+    .any_tab{
+        color:#717171;
+        font-size:12px;
+        line-height:16px;
+        display: flex;
+        align-items: center;
+        gap:10px;
+    }
+    .tab_img{
+        padding: 11px;
+        border: 1px solid lightgray;
+        border-radius: 30px;
+    }
+    .tab_headline{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    .search_txt_section{
+        display: flex;
+        align-items: center;
+        gap:30px;
+    }
+    .navbar2{
+        margin-top: 0px;
+        border: none;
+    }
+    .footer_desktop{
+        display: none;
+    }
+    .footer_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+        padding-bottom: 20px;
+        background-color: white;
+        position: fixed;
+        bottom:0;
+        left:0;
+        width:98%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .f-explore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        filter:grayscale(100%);
+        opacity:.5;
+        cursor: pointer;
+    }
+    .f-explore:active{
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+    .f-wish{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        filter:grayscale(100%);
+        opacity: .5;
+        cursor: pointer;
+
+    }
+    .f-log{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        filter:grayscale(100%);
+        opacity:.5;
+        cursor: pointer;
+
+    }
+    .foot_mob_txt{
+        font-size: 10px;
+        line-height: 12px;
+        font-weight: 600;
+        color:rgb(34, 34, 34);
+    }
+} 
+@media  screen and (max-width:549px){
+    .main{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .minhphu{
+        height:83vw;
+    }
+    .fagu{
+        height:83vw;
+    }
+
+    .munnar{
+        height:83vw;
+    }
+    .delhi{
+        height:83vw;
+    }
+    .shimla{
+        height:83vw;
+    }
+    .jibhi{
+        height:83vw;
+    }
+    .tambon{
+        height:83vw;
+    }
+    .kozhi{
+        height:83vw;
+    }
+    .sigiri{
+        height:83vw;
+    }
+    .muppai{
+        height:83vw;
+    }
+    .chiang{
+        height:83vw;
+    }
+    .kalpeta{
+        height:83vw;
+    }
+    .first_kerala{
+        height:83vw;
+    }
+    .second_kerala{
+        height:83vw;
+    }
+    .tissam{
+        height:83vw;
+    }
+    .second_jibhi{
+        height:83vw;
+    }
+    .kopha{
+        height:83vw;
+    }
+    .tandi{
+        height:83vw;
+    }
+    .mueang{
+        height:83vw;
+    }
+    .kotta{
+        height:83vw;
+    }
 }
