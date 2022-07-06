@@ -86,7 +86,7 @@
 }
 .navbar1_desktop{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
     padding:20px 10px;
 }
@@ -216,7 +216,39 @@
 }
 .nav2_small_section:hover{
     opacity:1;
+    border-bottom: 2px solid gray;
 }
+.filter{
+    display: flex;
+    gap:10px;
+    padding:10px;
+    border-radius: 10px;
+    border:1px solid lightgray;
+    background-color: white;
+    cursor: pointer;
+}
+.arrow_fix{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border:1px solid lightgray;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.nav_fix{
+    display: flex;
+    gap:20px;
+    position: fixed;
+    right:2%;
+    top:110px;
+    z-index: 50;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .main{
    
     margin:auto;
@@ -615,6 +647,66 @@
     padding-bottom: 8px;
     cursor:pointer;
 }
+.tambon{
+    height:19vw;
+    background-image: url(images/tambon/tambon-1.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.tambon:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.yela{
+    height:19vw;
+    background-image: url(images/tambon/tambon-13.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.yela:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.mae{
+    height:19vw;
+    background-image: url(images/muppai/muppai-5.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.mae:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
+.khet{
+    height:19vw;
+    background-image: url(images/muppai/muppai-5.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor:pointer;
+    position:relative;
+}
+.khet:hover .arrow_right_button{
+    display: flex;
+    padding-top:8px;
+    padding-bottom: 8px;
+    cursor:pointer;
+}
 .footer_button{
     display: flex;
     border:none;
@@ -731,28 +823,37 @@
         height:28vw;
     }
     .first_kerala{
-        height:280px;
+        height:28vw;
     }
     .second_kerala{
-        height:280px;
+        height:28vw;
     }
     .tissam{
-        height:280px;
+        height:28vw;
     }
     .second_jibhi{
-        height:280px;
+        height:28vw;
     }
     .kopha{
-        height:280px;
+        height:28vw;
     }
     .tandi{
-        height:280px;
+        height:28vw;
     }
     .mueang{
-        height:280px;
+        height:28vw;
     }
     .kotta{
-        height:280px;
+        height:28vw;
+    }
+    .yela{
+        height:28vw;
+    }
+    .mae{
+        height: 28vw;
+    }
+    .khet{
+        height: 28vw;
     }
 }
 @media  screen and (max-width:949px) {
@@ -824,6 +925,15 @@
         height:40vw;
     }
     .kotta{
+        height:40vw;
+    }
+    .yela{
+        height:40vw;
+    }
+    .mae{
+        height:40vw;
+    }
+    .khet{
         height:40vw;
     }
 }
@@ -898,7 +1008,7 @@
         opacity:.5;
         cursor: pointer;
     }
-    .f-explore:active{
+    .f-explore:hover{
         opacity: 1;
         filter: grayscale(0%);
     }
@@ -912,6 +1022,10 @@
         cursor: pointer;
 
     }
+    .f-wish:hover{
+        opacity: 1;
+        filter: grayscale(0%);
+    }
     .f-log{
         display: flex;
         flex-direction: column;
@@ -921,6 +1035,10 @@
         opacity:.5;
         cursor: pointer;
 
+    }
+    .f-log:hover{
+        opacity: 1;
+        filter: grayscale(0%);
     }
     .foot_mob_txt{
         font-size: 10px;
@@ -994,5 +1112,116 @@
     }
     .kotta{
         height:83vw;
+    }
+    .yela{
+        height:83vw;
+    }
+    .mae{
+        height: 83vw;
+    }
+    .khet{
+        height: 83vw;
+    }
+}
+@media screen and (min-width:1900px){
+    body{
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .main{
+        grid-template-columns: repeat(5, 1fr);
+        margin-right: 3%;
+        margin-left:3%;
+        
+    }
+    .minhphu{
+        height:14vw;
+    }
+    .fagu{
+        height:14vw;
+    }
+
+    .munnar{
+        height:14vw;
+    }
+    .delhi{
+        height:14vw;
+    }
+    .shimla{
+        height: 14vw;
+    }
+    .jibhi{
+        height:14vw;
+    }
+    .tambon{
+        height:14vw;
+    }
+    .kozhi{
+        height:14vw;
+    }
+    .sigiri{
+        height:14vw;
+    }
+    .muppai{
+        height:14vw;
+    }
+    .chiang{
+        height:14vw;
+    }
+    .kalpeta{
+        height:14vw;
+    }
+    .first_kerala{
+        height:14vw;
+    }
+    .second_kerala{
+        height:14vw;
+    }
+    .tissam{
+        height:14vw;
+    }
+    .second_jibhi{
+        height:14vw;
+    }
+    .kopha{
+        height:14vw;
+    }
+    .tandi{
+        height:14vw;
+    }
+    .mueang{
+        height:14vw;
+    }
+    .kotta{
+        height:14vw;
+    }
+    .yela{
+        height:14vw;
+    }
+    .mae{
+        height: 14vw;
+    }
+    .khet{
+        height: 14vw;
+    }
+    .navbar1_desktop{
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: 20%;
+    }
+    .navbar2{
+        max-width: 1800px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: scroll;
+        margin-right: 20%;
+    }
+    .footer_desktop{
+        left:auto;
+        max-width:1500px;
+        margin-left:auto;
+        margin-right:auto ;
     }
 }
