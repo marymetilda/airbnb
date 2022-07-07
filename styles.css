@@ -80,6 +80,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     cursor:pointer;
+    opacity: .6;
 }
 .nav_last_button:hover{
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%) ;
@@ -88,7 +89,7 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding:20px 10px;
+    padding:20px 6%;
 }
 .navbar1_tab{
     display:none;
@@ -97,7 +98,7 @@
     display:flex;
     align-items: center;
     justify-content: space-between;
-    gap:20px;
+    gap:5px;
 }
 .navbar2_img{
     height:26px;
@@ -110,6 +111,7 @@
     padding-top: 20px;
     border-top: 1px solid #ebe8e8;
     padding-left:50px;
+    padding-right: 5%;
 }
 
 .anywhere_button{
@@ -117,30 +119,32 @@
     background-color: white;
 }
 .anywhere{
-    color:black;
+    color:#222222;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight:500;
     border-top: none;
     border-left:none;
     border-bottom:none;
     border-right:1px solid #717171;
     padding:0px 10px;
+    font-family:Normal ;
 }
 .any_week_button{
     border:none;
     background-color:white;
 }
 .any_week{
-    color:black;
+    color:#222222;
     text-decoration:none;
-    font-size: 16px;
+    font-size: 15px;
     font-weight:500;
     border-top:none;
     border-bottom:none;
     border-left:none;
     border-right:1px solid #717171;
     padding:0px 10px;
+    font-family: "Normal";
 }
 .add_guests_button{
     display: flex;
@@ -155,8 +159,9 @@
 .add_guests{
     color:#717171;
     text-decoration:none;
-    font-size:16px;
+    font-size:15px;
     font-weight:500;
+    font-family: "Book";
 }
 .search_icon{
     display: block; 
@@ -173,12 +178,14 @@
     cursor: pointer;
 }
 .become_host{
-    color:black;
-    font-size: 16px;
+    color:#222222;
+    font-size: 15px;
     font-weight:500;
     text-decoration:none;
     padding:12px 16px;
     border-radius: 25px;
+    padding-right: 0px;
+    font-family: "Normal";
 }
 .become_host:hover{
     background-color: #f6f7f7;
@@ -218,6 +225,9 @@
     opacity:1;
     border-bottom: 2px solid gray;
 }
+.any_mob{
+    display: none;
+}
 .filter{
     display: flex;
     gap:10px;
@@ -226,6 +236,11 @@
     border:1px solid lightgray;
     background-color: white;
     cursor: pointer;
+    font-family: "Normal";
+    font-size: 12px;
+    color:#222222;
+    
+
 }
 .arrow_fix{
     padding-top: 10px;
@@ -241,12 +256,14 @@
     display: flex;
     gap:20px;
     position: fixed;
-    right:2%;
+    right:0;
     top:110px;
     z-index: 50;
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 6%;
 }
 
 .main{
@@ -257,8 +274,8 @@
     grid-template-columns:repeat(4, 1fr);
     grid-row-gap:40px;
     grid-column-gap:24px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 70px;
 
 }
@@ -297,9 +314,8 @@
 }
 .place_charge{
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 15px;
     font-family:Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-
 }
 .heart_img{
     display: block;
@@ -725,6 +741,8 @@
     left: 0;
     background: white;
     width:98%;
+    padding-left: 5%;
+
 }
 .footer_mobile{
     display: none;
@@ -735,6 +753,7 @@
     color:#222222;
     min-width: 120px;
     padding-right: 5px;
+    font-family: Book;
 }
 .footer_txt{
     font-size: 15px;
@@ -743,18 +762,28 @@
     padding-left: 5px;
     padding-right: 5px;
     white-space: nowrap;
+    font-family: Book;
+    cursor: pointer;
+}
+.footer_txt:hover{
+    text-decoration:underline;
 }
 .footer_txt-2{
-    font-weight:600;
     font-size:14px;
     line-height:18px;
     color:#222222;
     padding-left:5px;
     padding-right:5px;
+    font-family: Medium;
+    cursor: pointer;
+}
+.footer_txt-2:hover{
+    text-decoration:underline;
 }
 .footer_section-2{
     text-align: center;
     min-width: 350px;
+    padding-right: 7%;
 }
 .english_globe{
     display: flex;
@@ -953,6 +982,9 @@
         padding-left: 20px;
         padding-right: 7px;
         margin-bottom: 0px;
+    }
+    .nav_fix{
+        display: none;
     }
     .any_tab{
         color:#717171;
@@ -1223,5 +1255,22 @@
         max-width:1500px;
         margin-left:auto;
         margin-right:auto ;
+    }
+}
+@media screen and (max-width:365px){
+    .any_tab{
+        display: none;
+    }
+    .any_mob{
+        display: flex;
+        color:#717171;
+        font-size:12px;
+        line-height:16px;
+        align-items: center;
+        gap:10px;
+        white-space: nowrap;
+    }
+    .search_txt_section{
+        gap:15px;
     }
 }
